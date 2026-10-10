@@ -14,8 +14,11 @@ Made for game programming students (Unreal Engine C++ / Blueprints), but works f
 ## Install (2 commands)
 
 You need [Claude Code](https://code.claude.com) and, on Windows, [Git for Windows](https://git-scm.com/download/win).
+Pick **one** of the two options below.
 
-Inside Claude Code, run:
+### Option A: inside Claude Code in a terminal
+
+Run `claude` in a terminal, then type:
 ```
 /plugin marketplace add davidj-gd/code-tutor
 /plugin install code-tutor@nipsett
@@ -23,7 +26,32 @@ Inside Claude Code, run:
 When asked for a scope, pick **project** to have tutor mode only in your game project
 (recommended), or **user** to have it everywhere.
 
-Type `/tutor` to check it works.
+> `/plugin` does **not** work in the Claude desktop app. Desktop users: use Option B.
+
+### Option B: from any terminal (works for the desktop app too)
+
+Open a terminal (PowerShell, Git Bash, macOS Terminal...) and run:
+```
+claude plugin marketplace add davidj-gd/code-tutor
+claude plugin install code-tutor@nipsett
+```
+This installs it everywhere (user scope). To have it only in one game project instead,
+`cd` into that project folder and add `--scope project` to the second command.
+
+Then start a **new** Claude Code session and type `/tutor` to check it works.
+
+## Updating
+
+Get the latest version with either:
+```
+/plugin marketplace update nipsett
+```
+or, from a terminal:
+```
+claude plugin marketplace update nipsett
+```
+Then start a new session. To get updates automatically, open `/plugin` in a terminal session →
+**Marketplaces** → **nipsett** → enable auto-update.
 
 ---
 
@@ -68,7 +96,8 @@ If a short command clashes with another plugin you have, use the full name: `/co
   it into Claude Code (Ctrl+V).
 - **Journal:** run `/journal` at the end of each session. Over a semester it becomes a real
   record of what you learned — great for portfolio case studies.
-- **Uninstall:** `/plugin` → Installed → code-tutor → Uninstall.
+- **Uninstall:** `/plugin` → Installed → code-tutor → Uninstall, or from a terminal:
+  `claude plugin uninstall code-tutor@nipsett`.
 
 ---
 
