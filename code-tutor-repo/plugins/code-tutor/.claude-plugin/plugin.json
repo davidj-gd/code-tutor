@@ -1,0 +1,10 @@
+{
+  "name": "code-tutor",
+  "description": "Turns Claude into a programming teacher: it questions, explains and guides, but never edits or writes your code. Built for learning game dev (Unreal Engine C++ and Blueprints) without outsourcing the thinking.",
+  "version": "1.1.0",
+  "author": {
+    "name": "David Nipsett",
+    "url": "https://davidnipsett.com"
+  },
+  "keywords": ["learning", "teaching", "tutor", "unreal-engine", "education", "socratic"]
+}

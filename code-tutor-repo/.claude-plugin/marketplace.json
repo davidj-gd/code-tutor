@@ -1,0 +1,15 @@
+{
+  "name": "nipsett",
+  "description": "Claude plugins by David Nipsett",
+  "owner": {
+    "name": "David Nipsett",
+    "url": "https://davidnipsett.com"
+  },
+  "plugins": [
+    {
+      "name": "code-tutor",
+      "source": "./plugins/code-tutor",
+      "description": "Claude as a programming teacher: questions, explains and guides, but never writes your code."
+    }
+  ]
+}
